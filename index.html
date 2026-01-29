@@ -4,69 +4,72 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Brians Ostebiks</title>
+	<title>Brians Ostebiks html 3</title>
 </head>
 <body>
-	<div>
+	<header>
 		<a href="/">Brians Ostebiks</a>
-		<input type="button" value="Menu">
-		<div>
-			<ul>
-				<li><a href="#!">Forside</a></li>
-				<li><a href="#!">Produkter</a></li>
-				<li><a href="#!">Historie</a></li>
-				<li><a href="#!">Kontakt</a></li>
-			</ul>
+		<input type="button" value="Menu" aria-controls="primaryNavigation" aria-describedby="message-menu-button">
+		<div hidden>
+			<span id="message-menu-button">Klik her for at vise menuen</span>
 		</div>
-	</div>
+		<nav id="primaryNavigation" aria-hidden="true">
+			<ul role="tree">
+				<li role="treeitem"><a href="#!">Forside</a></li>
+				<li role="treeitem"><a href="#!">Produkter</a></li>
+				<li role="treeitem"><a href="#!">Historie</a></li>
+				<li role="treeitem"><a href="#!">Kontakt</a></li>
+			</ul>
+		</nav>
+	</header>
 
-	<div>
-		<h1>Brians Ostebiks</h1>
-		<p>Velkommen til min lille forretning. Her kan du købe alverdens oste til fornuftige priser. Jeg elsker ost, og derfor kan du være sikker på, at jeg kun har det allerbedste til dig.</p>
+	<main>
+		<h1 aria-describedby="Buissness-name">Brians Ostebiks</h1>
+		<p aria-describedby="Buissness-message">Velkommen til min lille forretning. Her kan du købe alverdens oste til fornuftige priser. Jeg elsker ost, og derfor kan du være sikker på, at jeg kun har det allerbedste til dig.</p>
 		
 		<h2>Særlige tilbud</h2>
-		<div>
-			<h3>Ældgammel Rochefort</h3>
-			<img src="https://placehold.co/200x200">
-			<p>Denne Rochefort kan kravle hen ad køkkenbordet helt af sig selv.</p>
-			<p>Kr. 97,50</p>
-			<a href="#!/produkter/4432">Læs mere</a>
-		</div>
-		<div>
-			<h3>Mild Brie</h3>
-			<img src="https://placehold.co/200x200">
-			<p>Hvidskimmelosten alle elsker.</p>
-			<p>Kr. 43,95</p>
-			<a href="#!/produkter/43329">Læs mere</a>
-		</div>
-		<div>
-			<h3>Potkäse</h3>
-			<img src="https://placehold.co/200x200">
-			<p>Min egen hjemmerørte potkäse.</p>
-			<p>Kr. 52,50</p>
-			<a href="#!/produkter/2342">Læs mere</a>
-		</div>
-	</div>
+		<article aria-describedby="Product-article">
+			<h3 aria-describedby="Product-name">Ældgammel Rochefort</h3>
+			<img src="https://placehold.co/200x200" alt="placeholder image" aria-describedby="Product-image">
+			<p aria-describedby="Product-info">Denne Rochefort kan kravle hen ad køkkenbordet helt af sig selv.</p>
+			<p aria-describedby="Product-price">Kr. 97,50</p>
+			<a href="#!/produkter/4432" aria-describedby="article-read-more-button">Læs mere</a>
+		</article>
+		<article aria-describedby="Product-article">
+			<h3 aria-describedby="Product-name">Mild Brie</h3>
+			<img src="https://placehold.co/200x200" alt="placeholder image" aria-describedby="Product-image">
+			<p aria-describedby="Product-info">Hvidskimmelosten alle elsker.</p>
+			<p aria-describedby="Product-price">Kr. 43,95</p>
+			<a href="#!/produkter/43329" aria-describedby="article-read-more-button">Læs mere</a>
+		</article>
+		<article aria-describedby="Product-article">
+			<h3 aria-describedby="Product-name">Potkäse</h3>
+			<img src="https://placehold.co/200x200" alt="placeholder image" aria-describedby="Product-image">
+			<p aria-describedby="Product-info">Min egen hjemmerørte potkäse.</p>
+			<p aria-describedby="Product-price">Kr. 52,50</p>
+			<a href="#!/produkter/2342" aria-describedby="article-read-more-button">Læs mere</a>
+		</article>
+	</main>
 
-	<div>
-		<div>
-			<p>Brians Ostebiks</p>
-			<p>Camembert Boulevard 42</p>
-			<p>4242 Nørre Osteved</p>
-			<p>Tlf.: 1243 5687</p>
-			<p><a href="mailto:cheesylove@briansostebiks.dk">cheesylove@briansostebiks.dk</a></p>
-		</div>
-		<div>
+	<footer>
+		<address aria-describedby="Address-information">
+			<p aria-describedby="Buissness-name">Brians Ostebiks</p>
+			<p aria-describedby="Buissness-road">Camembert Boulevard 42</p>
+			<p aria-describedby="Buissness-city">4242 Nørre Osteved</p>
+			<p aria-describedby="Number">Tlf.: 1243 5687</p>
+			<p aria-describedby="Email"><a href="mailto:cheesylove@briansostebiks.dk">cheesylove@briansostebiks.dk</a></p>
+		</address>
+		<section>
 			<h1>Find os her</h1>
-			<ul>
-				<li><a href="#!">Facebook</a></li>
-				<li><a href="#!">Instragram</a></li>
-				<li><a href="#!">Twitter</a></li>
+			<ul role="tree">
+				<li role="treeitem"><a href="#!" aria-describedby="Link-to-facebook">Facebook</a></li>
+				<li role="treeitem"><a href="#!" aria-describedby="Link-to-instagram">Instragram</a></li>
+				<li role="treeitem"><a href="#!" aria-describedby="Link-to-twitter">Twitter</a></li>
 			</ul>
-		</div>
-		<div>
+		</section>
+		<small aria-describedby="Buissness-copyright">
 			Ophavsret &copy; 2018 Brians Ostebiks. Alle rettigheder forbeholdes.
-		</div>
-	</div>
+		</small>
+	</footer>
 </body>
 </html>
